@@ -1,0 +1,512 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     <div class="font-poppins">
+          <header class="absolute top-0 md:pt-14 pt-[38px] w-full left-0">
+               <nav class=" max-w-[1440px] mx-auto 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8">
+                    <div class="flex flex-wrap lg:justify-start justify-between items-center mx-auto">
+                         <a href="index.html" class="flex items-center">
+                              <img src="images/white-logo.svg" class="md:w-auto w-[110px]" alt="" />
+                         </a>
+                         <button data-collapse-toggle="mega-menu-full2" type="button"
+                              class="inline-flex items-center p-2 lg:w-10 w-12 lg:h-10 h-11 justify-center text-sm text-black-1000 rounded-lg lg:hidden bg-pink-1000 hover:bg-blue-1000 hover:text-white focus:outline-none "
+                              aria-controls="mega-menu-full2" aria-expanded="false">
+                              <span class="sr-only">Open main menu</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" viewBox="0 0 25 14"
+                                   fill="none">
+                                   <line x1="1.08984" y1="1" x2="23.0898" y2="1" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                   <line x1="1.08984" y1="7" x2="23.0898" y2="7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                   <line x1="1.08984" y1="13" x2="12.0898" y2="13" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                              </svg>
+                         </button>
+                         <div id="mega-menu-full2"
+                              class="xl:ml-10 lg:ml-5 items-center justify-between font-medium hidden w-full lg:flex lg:w-auto lg:order-1 lg:static lg:top-0 lg:left-0 lg:border-0 absolute top-[120px] left-0  z-[1000]">
+                              <ul
+                                   class="lg:flex items-center lg:bg-transparent bg-blue-1200 lg:mx-0 mx-5 lg:rounded-none rounded-lg lg:py-0 py-6 lg:text-start text-center flex-col  md:flex-row text-base font-medium font-inter">
+                                   <li
+                                        class="menu xl:mr-10 lg:mb-0 mb-5 lg:mr-5 cursor-pointer hover:text-yellow-1000 text-white  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2  after:left-1/2  after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn"
+                                             class="flex items-center justify-center hover:text-yellow-1000  text-white text-base font-medium"
+                                             aria-expanded="false">Products
+                                        </a>
+                                        <div
+                                             class="lg:w-[894px] lg:overflow-visible  overflow-y-auto mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-[32px] lg:absolute mx-auto z-[9999] pt-[34px] lg:pl-7 pl-6 pb-14 lg:pr-[70px] pr-6 xl:left-0 -left-[190px] bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible   lg:px-6">
+                                             <div class="overflow-hidden">
+                                                  <div class="flex flex-wrap">
+                                                       <div class="lg:w-[63%]">
+                                                            <div
+                                                                 class="grid sm:grid-cols-2 grid-cols-1 gap-4 lg:border-r border-gray-1800/[0.2]">
+                                                                 <div>
+                                                                      <div>
+                                                                           <h6
+                                                                                class="text-blue-1000 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                                <img src="images/shop-icon.svg"
+                                                                                     class="mr-3" alt="">
+                                                                                <strong> Smart</strong>Pay
+                                                                           </h6>
+                                                                           <ul class="pl-[42px] lg:mt-[35px] mt-4">
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartRewards</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">Our
+                                                                                               rewards
+                                                                                               program</span>
+                                                                                     </a></li>
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartAnalytics</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Keep track of your
+                                                                                               spending</span>
+                                                                                     </a></li>
+                                                                                <li><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartBills</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Instantly pay
+                                                                                               bills</span>
+                                                                                     </a></li>
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div>
+                                                                      <div>
+                                                                           <h6
+                                                                                class="text-blue-1000 opacity-0 font-dm-sans sm:flex hidden items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                                <img src="images/shop-icon.svg"
+                                                                                     class="mr-1.5" alt="">
+                                                                                <strong> Smart</strong>Pay
+                                                                           </h6>
+                                                                           <ul
+                                                                                class="sm:mt-[35px] sm:pl-0 sm:pr-4 lg:pl-0 pl-[42px]">
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartChat</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Chat to any of your
+                                                                                               contacts</span>
+                                                                                     </a></li>
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartRequests</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Send payment requests
+                                                                                          </span>
+                                                                                     </a></li>
+                                                                                <li><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartPayroll </h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Get paid as an
+                                                                                               employee</span>
+                                                                                     </a></li>
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="lg:w-[37%] lg:mt-0 mt-8 lg:pl-8">
+                                                            <div>
+                                                                 <div>
+                                                                      <h6
+                                                                           class="text-green-1100 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                           <img src="images/teal-small.svg"
+                                                                                class="lg:mr-3 mr-2" alt="">
+                                                                           <strong> Smart</strong>Pay
+                                                                      </h6>
+                                                                      <ul class="lg:pl-14 pl-11 lg:mt-[35px] mt-4">
+                                                                           <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                          Book Accomodation</h6>
+                                                                                     <span
+                                                                                          class="text-[13px] font-medium font-poppins text-green-1100">
+                                                                                          Search and book your
+                                                                                          stay</span>
+                                                                                </a></li>
+                                                                           <li><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                          List your property</h6>
+                                                                                     <span
+                                                                                          class="text-[13px] font-medium font-poppins text-green-1100">
+                                                                                          Short and Long-term
+                                                                                          stays</span>
+                                                                                </a></li>
+                                                                      </ul>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li
+                                        class="menu2 xl:mr-10 lg:mb-0 mb-5 lg:mr-5 cursor-pointer hover:text-yellow-1000 text-white  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2  after:left-1/2 after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn2"
+                                             class="flex items-center justify-center hover:text-yellow-1000  text-white text-base font-medium"
+                                             aria-expanded="false">Company
+                                        </a>
+                                        <div
+                                             class="lg:w-[201px] mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-xl lg:absolute mx-auto z-[9999] py-4 px-4  bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible ">
+                                             <div class="overflow-hidden">
+                                                  <ul>
+                                                       <li><a href="about-us.html"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">About
+                                                                 us</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Green
+                                                                 Heart</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Press</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Affiliate
+                                                                 Program</a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+
+                                        </div>
+                                   </li>
+                                   <li
+                                        class="menu3  lg:mb-0 mb-5  cursor-pointer hover:text-yellow-1000 text-white  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2 after:left-1/2 after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn3"
+                                             class="flex items-center justify-center hover:text-yellow-1000  text-white text-base font-medium"
+                                             aria-expanded="false">Partner with us
+                                        </a>
+                                        <div
+                                             class="lg:w-[560px] mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-3xl lg:absolute mx-auto z-[9999] pt-[34px] lg:pl-7 pl-6 pb-14  pr-6  bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible   lg:px-6">
+                                             <div class="overflow-hidden">
+                                                  <div class="grid sm:grid-cols-2 grid-cols-1 ">
+                                                       <div class="lg:border-r border-gray-1800/[0.2]">
+                                                            <h6
+                                                                 class="text-blue-1000 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                 <img src="images/shop-icon.svg" class="mr-3" alt="">
+                                                                 <strong> Smart</strong>Pay
+                                                            </h6>
+                                                            <ul class="pl-[42px] mt-6 pr-4">
+                                                                 <li class="mb-4"><a href="merchant-register.html"
+                                                                           class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                           <h6
+                                                                                class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                SmartPay Merchant</h6>
+                                                                      </a></li>
+                                                                 <li><a href="#"
+                                                                           class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                           <h6
+                                                                                class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                Promote with Smartie</h6>
+                                                                      </a></li>
+                                                            </ul>
+                                                       </div>
+                                                       <div class="lg:mt-0 mt-8 lg:pl-8">
+                                                            <div>
+                                                                 <div>
+                                                                      <h6
+                                                                           class="text-green-1100 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                           <img src="images/teal-small.svg" class="mr-3"
+                                                                                alt="">
+                                                                           <strong> Smart</strong>Pay
+                                                                      </h6>
+                                                                      <ul class="lg:pl-14 pl-11 lg:mt-[18px] mt-4">
+                                                                           <li class="mb-4"><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                          List your property</h6>
+
+                                                                                </a></li>
+                                                                           <li><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                          Affiliate Program</h6>
+                                                                                </a></li>
+                                                                      </ul>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="nav-btn order-2 ml-auto lg:block hidden">
+                              <ul class="flex items-center justify-end">
+                                   <li class="mr-3"> <a href="#"
+                                             class="text-white text-base font-medium hover:bg-yellow-1000 hover:text-blue-1000 border-2 border-yellow-1000 xl:w-[180px] w-[120px] h-14 flex items-center rounded-full justify-center">Login</a>
+                                   </li>
+                                   <li> <a href="#" data-modal-target="default-modal" data-modal-toggle="default-modal"
+                                             class="text-blue-1000 text-base font-medium hover:bg-transparent border-2 hover:text-white border-yellow-1000 bg-yellow-1000 xl:w-[180px] w-[120px] h-14 flex items-center rounded-full justify-center">Sign
+                                             up</a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </nav>
+          </header>
+          <section
+               class="bg-bg-clr  lg:pt-[310px] md:pt-[200px] pt-[151px] xl:pb-[270px] lg:pb-[205px] md:pb-28 pb-[60px]">
+               <div class="max-w-[1040px]  mx-auto">
+                    <div data-aos="fade-up" data-aos-delay="200"
+                         class="max-w-[912px] xl:mx-0 lg:mx-[70px] md:mx-10 mx-[30px]">
+                         <h6
+                              class="text-xl md:text-start text-center font-bold text-white lg:mb-[60px] mb-8 font-dm-sans leading-[100%] tracking-[-0.5px]">
+                              Welcome to Smartie’s Knowledge Base Help Centre
+                         </h6>
+                         <div class="flex items-center lg:mb-36 md:mb-10 mb-36">
+                              <div class="md:mr-[14px] mr-1.5">
+                                   <img src="images/search.svg" alt="">
+                              </div>
+                              <input type="email" id="email"
+                                   class="bg-white rounded-[50px] md:h-[75px] h-[50px] focus:ring-0 lock w-full md:text-lg text-xs italic font-normal text-blue-1300 md:max-w-[600px] max-w-[264px] placeholder:text-blue-1300 md:pl-10 pl-4 py-6"
+                                   placeholder="Start typing to search for a topic" required>
+                         </div>
+                         <h2
+                              class="xl:text-[80px] md:text-start text-center md:text-[68px] text-[32px] md:mb-20 mb-24 text-white font-dm-sans leading-[100%] tracking-[-2px] font-medium">
+                              Frequently Asked<br>
+                              Questions</h2>
+
+                         <div id="accordion-collapse" data-accordion="collapse">
+                              <div class="border-t border-white md:py-6 py-5">
+                                   <h2 id="accordion-collapse-heading-21">
+                                        <button type="button"
+                                             class="flex items-center justify-between  md:pr-6 pr-2.5 md:text-[32px] text-[15px] text-start text-white font-dm-sans font-medium leading-[110%] tracking-[-1.44px] w-full focus:ring-0"
+                                             data-accordion-target="#accordion-collapse-body-21" aria-expanded="false"
+                                             aria-controls="accordion-collapse-body-21">
+                                             <span>What is the Smartie App?</span>
+                                             <svg xmlns="http://www.w3.org/2000/svg"
+                                                  class="md:w-[29px] w-5 md:h-[23px] h-[17px] rotate-180 shrink-0"
+                                                  viewBox="0 0 23 17" fill="none">
+                                                  <path d="M13.1169 15.7788C12.3182 16.8761 10.6818 16.8761 9.88306 15.7788L1.25542 3.92707C0.293173 2.60523 1.23738 0.75 2.87237 0.75L20.1276 0.749999C21.7626 0.749998 22.7068 2.60523 21.7446 3.92707L13.1169 15.7788Z"
+                                                       fill="white" />
+                                             </svg>
+                                        </button>
+                                   </h2>
+                                   <div id="accordion-collapse-body-21" class="hidden"
+                                        aria-labelledby="accordion-collapse-heading-21">
+                                        <div class="mt-8 pb-6">
+                                             <p
+                                                  class="text-white md:text-lg text-[15px] md:leading-[27px] max-w-[680px]">
+                                                  Smartie is the
+                                                  South
+                                                  Pacific’s instant, secure, and user-friendly payments
+                                                  platform using smart, innovative products and services to help you
+                                                  manage
+                                                  your finances.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="border-t border-white md:py-6 py-5">
+                                   <h2 id="accordion-collapse-heading-2">
+                                        <button type="button"
+                                             class="flex items-center justify-between  md:pr-6 pr-2.5 md:text-[32px] text-[15px] text-start text-white font-dm-sans font-medium leading-[110%] tracking-[-1.44px] w-full focus:ring-0"
+                                             data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                             aria-controls="accordion-collapse-body-2">
+                                             <span>Is the Smartie app safe to use?</span>
+                                             <svg xmlns="http://www.w3.org/2000/svg"
+                                                  class="md:w-[29px] w-5 md:h-[23px] h-[17px] rotate-180 shrink-0"
+                                                  viewBox="0 0 23 17" fill="none">
+                                                  <path d="M13.1169 15.7788C12.3182 16.8761 10.6818 16.8761 9.88306 15.7788L1.25542 3.92707C0.293173 2.60523 1.23738 0.75 2.87237 0.75L20.1276 0.749999C21.7626 0.749998 22.7068 2.60523 21.7446 3.92707L13.1169 15.7788Z"
+                                                       fill="white" />
+                                             </svg>
+                                        </button>
+                                   </h2>
+                                   <div id="accordion-collapse-body-2" class="hidden"
+                                        aria-labelledby="accordion-collapse-heading-2">
+                                        <div class="mt-8 pb-6">
+                                             <p
+                                                  class="text-white md:text-lg text-[15px] md:leading-[27px] max-w-[680px]">
+                                                  Smartie is the
+                                                  South
+                                                  Pacific’s instant, secure, and user-friendly payments
+                                                  platform using smart, innovative products and services to help you
+                                                  manage
+                                                  your finances.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="border-t border-white md:py-6 py-5">
+                                   <h2 id="accordion-collapse-heading-3">
+                                        <button type="button"
+                                             class="flex items-center justify-between  md:pr-6 pr-2.5 md:text-[32px] text-[15px] text-start text-white font-dm-sans font-medium leading-[110%] tracking-[-1.44px] w-full focus:ring-0"
+                                             data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                             aria-controls="accordion-collapse-body-3">
+                                             <span>Other topics to answer?</span>
+                                             <svg xmlns="http://www.w3.org/2000/svg"
+                                                  class="md:w-[29px] w-5 md:h-[23px] h-[17px] rotate-180 shrink-0"
+                                                  viewBox="0 0 23 17" fill="none">
+                                                  <path d="M13.1169 15.7788C12.3182 16.8761 10.6818 16.8761 9.88306 15.7788L1.25542 3.92707C0.293173 2.60523 1.23738 0.75 2.87237 0.75L20.1276 0.749999C21.7626 0.749998 22.7068 2.60523 21.7446 3.92707L13.1169 15.7788Z"
+                                                       fill="white" />
+                                             </svg>
+                                        </button>
+                                   </h2>
+                                   <div id="accordion-collapse-body-3" class="hidden"
+                                        aria-labelledby="accordion-collapse-heading-3">
+                                        <div class="mt-8 pb-6">
+                                             <p
+                                                  class="text-white md:text-lg text-[15px] md:leading-[27px] max-w-[680px]">
+                                                  Smartie is the
+                                                  South
+                                                  Pacific’s instant, secure, and user-friendly payments
+                                                  platform using smart, innovative products and services to help you
+                                                  manage
+                                                  your finances.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="border-t border-b border-white md:py-6 py-5" data-aos-delay="500">
+                                   <h2 id="accordion-collapse-heading-4">
+                                        <button type="button"
+                                             class="flex items-center justify-between  md:pr-6 pr-2.5 md:text-[32px] text-[15px] text-start text-white font-dm-sans font-medium leading-[110%] tracking-[-1.44px] w-full focus:ring-0"
+                                             data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                             aria-controls="accordion-collapse-body-4">
+                                             <span>Another questions?</span>
+                                             <svg xmlns="http://www.w3.org/2000/svg"
+                                                  class="md:w-[29px] w-5 md:h-[23px] h-[17px] rotate-180 shrink-0"
+                                                  viewBox="0 0 23 17" fill="none">
+                                                  <path d="M13.1169 15.7788C12.3182 16.8761 10.6818 16.8761 9.88306 15.7788L1.25542 3.92707C0.293173 2.60523 1.23738 0.75 2.87237 0.75L20.1276 0.749999C21.7626 0.749998 22.7068 2.60523 21.7446 3.92707L13.1169 15.7788Z"
+                                                       fill="white" />
+                                             </svg>
+                                        </button>
+                                   </h2>
+                                   <div id="accordion-collapse-body-4" class="hidden"
+                                        aria-labelledby="accordion-collapse-heading-4">
+                                        <div class="mt-8 pb-6">
+                                             <p
+                                                  class="text-white md:text-lg text-[15px] md:leading-[27px] max-w-[680px]">
+                                                  Smartie is the
+                                                  South
+                                                  Pacific’s instant, secure, and user-friendly payments
+                                                  platform using smart, innovative products and services to help you
+                                                  manage
+                                                  your finances.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+          </section>
+          <footer class="bg-blue-1100 pt-[58px] md:pb-[61px] pb-8">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 mx-auto">
+                    <div class="max-w-[1040px] mx-auto border-b md:pb-[67px] pb-10 border-white">
+                         <div class="flex flex-wrap">
+                              <div class="md:w-1/4 w-full md:text-start text-center">
+                                   <img src="images/white-logo.svg" class="inline-block" alt="">
+                              </div>
+                              <div class="md:w-1/4 w-full md:mt-0 mt-6">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Company
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">About
+                                                  us</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Meet
+                                                  the team</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Press</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Blog</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="md:w-1/4 w-full">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Support
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Knowledge
+                                                  Centre</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Cookies</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Privacy
+                                                  &
+                                                  terms</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Sitemap</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="md:w-1/4 w-full">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Products
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartPay</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartStay</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartWeb</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-[1040px] mx-auto  ">
+                         <a href="#" class="flex md:mt-8 mt-6 xl:justify-end justify-center items-center"><img
+                                   src="images/up-scroll.svg" alt=""><span
+                                   class="text-white font-open-sans ml-4 text-base leading-6 tracking-[-0.4px]">Back to
+                                   top</span></a>
+                    </div>
+               </div>
+          </footer>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="js/main.js"></script>
+     <script>
+          AOS.init({
+               duration: 700,
+          });
+     </script>
+</body>
+
+</html>

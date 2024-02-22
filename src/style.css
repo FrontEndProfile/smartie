@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu:hover .menu-box,
+.menu2:hover .menu-box,
+.menu3:hover .menu-box {
+     opacity: 1;
+     visibility: visible;
+     top: 56px;
+     transition: all 0.5s ease-in-out;
+}
+
+.text {
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 9;
+     line-clamp: 9;
+     -webkit-box-orient: vertical;
+}
+
+#accordion-collapse button[aria-expanded="true"] {
+     background-color: transparent;
+     color: #fff;
+}
+
+#accordion-collapse button[aria-expanded="false"] svg {
+     transform: rotate(0deg);
+}
+
+#accordion-collapse button[aria-expanded="true"] svg {
+     transform: rotate(180deg);
+}
+
+
+.card:hover button {
+     background-color: rgb(252, 244, 255);
+}
+
+
+
+.box:hover button {
+     background-color: #292930;
+     color: #fff;
+     border-radius: 8px;
+}
+
+.box:hover button svg path {
+     stroke: #fff;
+}
+
+.box:hover {
+     opacity: 0.9;
+}
+
+.menu.menu-white:hover a {
+     color: #A024D5;
+}
+
+@media (max-width: 1199px) {
+     .list-items br {
+          display: none;
+     }
+}
+
+@media (max-width: 991px) {
+     .menu-box {
+          display: none;
+     }
+
+     .menu.menu-white:hover a {
+          color: #F9ED0B;
+     }
+
+     .menu-show .menu-box {
+          display: block;
+          max-height: 300px;
+          overflow: scroll;
+     }
+
+     .menu-show::after {
+          content: '' !important;
+     }
+}
+
+@media (max-width: 767px) {
+     .blue-bg svg line {
+          stroke: #fff;
+     }
+}

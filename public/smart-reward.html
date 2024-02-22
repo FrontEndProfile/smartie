@@ -1,0 +1,668 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     <div class="font-poppins overflow-hidden">
+          <header class="absolute top-0 md:pt-14 pt-[38px] w-full left-0">
+               <nav class=" max-w-[1440px] mx-auto 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 ">
+                    <div class="flex flex-wrap lg:justify-start justify-between items-center mx-auto">
+                         <a href="index.html" class="flex items-center">
+                              <img src="images/colour-logo.svg" class="md:w-auto w-[110px]" alt="" />
+                         </a>
+                         <button data-collapse-toggle="mega-menu-full2" type="button"
+                              class="inline-flex items-center p-2 lg:w-10 w-12 lg:h-10 h-11 justify-center text-sm text-black-1000 rounded-lg lg:hidden bg-pink-1000  hover:text-white focus:outline-none "
+                              aria-controls="mega-menu-full2" aria-expanded="false">
+                              <span class="sr-only">Open main menu</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" viewBox="0 0 25 14"
+                                   fill="none">
+                                   <line x1="1.09082" y1="1" x2="23.0908" y2="1" stroke="#A024D5" stroke-width="2"
+                                        stroke-linecap="round" />
+                                   <line x1="1.09082" y1="7" x2="23.0908" y2="7" stroke="#A024D5" stroke-width="2"
+                                        stroke-linecap="round" />
+                                   <line x1="1.09082" y1="13" x2="12.0908" y2="13" stroke="#A024D5" stroke-width="2"
+                                        stroke-linecap="round" />
+                              </svg>
+                         </button>
+                         <div id="mega-menu-full2"
+                              class="xl:ml-10 lg:ml-5 items-center justify-between font-medium hidden w-full lg:flex lg:w-auto lg:order-1 lg:static lg:top-0 lg:left-0 lg:border-0 absolute top-[120px] left-0  z-[1000]">
+                              <ul
+                                   class="lg:flex items-center lg:bg-transparent bg-blue-1200 lg:mx-0 mx-5 lg:rounded-none rounded-lg lg:py-0 py-6 lg:text-start text-center flex-col  md:flex-row text-base font-medium font-inter">
+                                   <li
+                                        class="menu xl:mr-10 lg:mb-0 mb-5 lg:mr-5 cursor-pointer hover:text-yellow-1000 text-black-1100  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/blue-polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2  after:left-1/2  after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn"
+                                             class="flex items-center justify-center hover:text-blue-1000  text-black-1100 text-base font-medium"
+                                             aria-expanded="false">Products
+                                        </a>
+                                        <div
+                                             class="lg:w-[894px] lg:overflow-visible  overflow-y-auto mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-[32px] lg:absolute mx-auto z-[9999] pt-[34px] lg:pl-7 pl-6 pb-14 lg:pr-[70px] pr-6 xl:left-0 -left-[190px] bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible   lg:px-6">
+                                             <div class="overflow-hidden">
+                                                  <div class="flex flex-wrap">
+                                                       <div class="lg:w-[63%]">
+                                                            <div
+                                                                 class="grid sm:grid-cols-2 grid-cols-1 gap-4 lg:border-r border-gray-1800/[0.2]">
+                                                                 <div>
+                                                                      <div>
+                                                                           <h6
+                                                                                class="text-blue-1000 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                                <img src="images/shop-icon.svg"
+                                                                                     class="mr-3" alt="">
+                                                                                <strong> Smart</strong>Pay
+                                                                           </h6>
+                                                                           <ul class="pl-[42px] lg:mt-[35px] mt-4">
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartRewards</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">Our
+                                                                                               rewards
+                                                                                               program</span>
+                                                                                     </a></li>
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartAnalytics</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Keep track of your
+                                                                                               spending</span>
+                                                                                     </a></li>
+                                                                                <li><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartBills</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Instantly pay
+                                                                                               bills</span>
+                                                                                     </a></li>
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div>
+                                                                      <div>
+                                                                           <h6
+                                                                                class="text-blue-1000 opacity-0 font-dm-sans sm:flex hidden items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                                <img src="images/shop-icon.svg"
+                                                                                     class="mr-1.5" alt="">
+                                                                                <strong> Smart</strong>Pay
+                                                                           </h6>
+                                                                           <ul
+                                                                                class="sm:mt-[35px] sm:pl-0 sm:pr-4 lg:pl-0 pl-[42px]">
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartChat</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Chat to any of your
+                                                                                               contacts</span>
+                                                                                     </a></li>
+                                                                                <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartRequests</h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Send payment requests
+                                                                                          </span>
+                                                                                     </a></li>
+                                                                                <li><a href="#"
+                                                                                          class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                          <h6
+                                                                                               class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                               SmartPayroll </h6>
+                                                                                          <span
+                                                                                               class="text-[13px] font-medium font-poppins text-blue-1000">
+                                                                                               Get paid as an
+                                                                                               employee</span>
+                                                                                     </a></li>
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="lg:w-[37%] lg:mt-0 mt-8 lg:pl-8">
+                                                            <div>
+                                                                 <div>
+                                                                      <h6
+                                                                           class="text-green-1100 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                           <img src="images/teal-small.svg"
+                                                                                class="lg:mr-3 mr-2" alt="">
+                                                                           <strong> Smart</strong>Pay
+                                                                      </h6>
+                                                                      <ul class="lg:pl-14 pl-11 lg:mt-[35px] mt-4">
+                                                                           <li class="lg:mb-5 mb-4"><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                          Book Accomodation</h6>
+                                                                                     <span
+                                                                                          class="text-[13px] font-medium font-poppins text-green-1100">
+                                                                                          Search and book your
+                                                                                          stay</span>
+                                                                                </a></li>
+                                                                           <li><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100 mb-1">
+                                                                                          List your property</h6>
+                                                                                     <span
+                                                                                          class="text-[13px] font-medium font-poppins text-green-1100">
+                                                                                          Short and Long-term
+                                                                                          stays</span>
+                                                                                </a></li>
+                                                                      </ul>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li
+                                        class="menu2 xl:mr-10 lg:mb-0 mb-5 lg:mr-5 cursor-pointer hover:text-yellow-1000 text-white  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/blue-polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2  after:left-1/2 after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn2"
+                                             class="flex items-center justify-center hover:text-blue-1000  text-black-1100 text-base font-medium"
+                                             aria-expanded="false">Company
+                                        </a>
+                                        <div
+                                             class="lg:w-[201px] mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-xl lg:absolute mx-auto z-[9999] py-4 px-4  bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible ">
+                                             <div class="overflow-hidden">
+                                                  <ul>
+                                                       <li><a href="about-us.html"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">About
+                                                                 us</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Green
+                                                                 Heart</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Press</a>
+                                                       </li>
+                                                       <li><a href="#"
+                                                                 class="text-[15px] block py-2 px-2 hover:bg-purple-shade rounded-md font-medium font-poppins hover:text-blue-1000 text-black-1100">Affiliate
+                                                                 Program</a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+
+                                        </div>
+                                   </li>
+                                   <li
+                                        class="menu3  lg:mb-0 mb-5  cursor-pointer hover:text-blue-1000  text-black-1100  hover:after:opacity-100 relative lg:after:content-[''] after:content-[none] after:bg-[url('../images/blue-polygon.svg')] after:bg-contain after:opacity-0 after:w-[23px] after:z-10 after:bg-center after:bg-no-repeat after:h-[29px] after:absolute lg:after:-bottom-9 after:bottom-auto lg:after:top-auto after:top-[18px] lg:after:left-1/2 lg:after:-translate-x-1/2 after:left-1/2 after:-translate-x-1/2 before:content-[''] before:bg-transparent before:opacity-0 before:w-full before:h-16 before:absolute before:-bottom-16 before:left-0">
+                                        <a id="pages-btn3"
+                                             class="flex items-center justify-center hover:text-blue-1000  text-black-1100 text-base font-medium"
+                                             aria-expanded="false">Partner with us
+                                        </a>
+                                        <div
+                                             class="lg:w-[560px] mt-[19px] text-start w-full overflow-hidden menu-box xl:transition-all duration-500 ease-in-out lg:rounded-3xl lg:absolute mx-auto z-[9999] pt-[34px] lg:pl-7 pl-6 pb-14  pr-6  bg-gray-1000 lg:top-[90px] lg:opacity-0 lg:invisible   lg:px-6">
+                                             <div class="overflow-hidden">
+                                                  <div class="grid sm:grid-cols-2 grid-cols-1 ">
+                                                       <div class="lg:border-r border-gray-1800/[0.2]">
+                                                            <h6
+                                                                 class="text-blue-1000 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                 <img src="images/shop-icon.svg" class="mr-3" alt="">
+                                                                 <strong> Smart</strong>Pay
+                                                            </h6>
+                                                            <ul class="pl-[42px] mt-6 pr-4">
+                                                                 <li class="mb-4"><a href="merchant-register.html"
+                                                                           class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                           <h6
+                                                                                class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                SmartPay Merchant</h6>
+                                                                      </a></li>
+                                                                 <li><a href="#"
+                                                                           class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                           <h6
+                                                                                class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                Promote with Smartie</h6>
+                                                                      </a></li>
+                                                            </ul>
+                                                       </div>
+                                                       <div class="lg:mt-0 mt-8 lg:pl-8">
+                                                            <div>
+                                                                 <div>
+                                                                      <h6
+                                                                           class="text-green-1100 font-dm-sans flex items-center text-xl font-medium leading-[110%] tracking-[-0.9px]">
+                                                                           <img src="images/teal-small.svg" class="mr-3"
+                                                                                alt="">
+                                                                           <strong> Smart</strong>Pay
+                                                                      </h6>
+                                                                      <ul class="lg:pl-14 pl-11 lg:mt-[18px] mt-4">
+                                                                           <li class="mb-4"><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                          List your property</h6>
+
+                                                                                </a></li>
+                                                                           <li><a href="#"
+                                                                                     class="leading-4 block py-2 px-2 hover:bg-purple-shade rounded-md">
+                                                                                     <h6
+                                                                                          class="text-[15px] font-medium font-poppins text-black-1100  hover:text-blue-1000">
+                                                                                          Affiliate Program</h6>
+                                                                                </a></li>
+                                                                      </ul>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="nav-btn order-2 ml-auto lg:block hidden">
+                              <ul class="flex items-center justify-end">
+                                   <li class="mr-3"> <a href="#"
+                                             class="text-blue-1000 text-base font-medium hover:bg-blue-1000 hover:text-white border-2 border-blue-1000 xl:w-[180px] w-[120px] h-14 flex items-center rounded-full justify-center">Login</a>
+                                   </li>
+                                   <li> <a href="#" data-modal-target="default-modal" data-modal-toggle="default-modal"
+                                             class="text-blue-1000 text-base font-medium border-2 hover:text-white hover:bg-blue-1000 hover:border-blue-1000 border-yellow-1000 bg-yellow-1000 xl:w-[180px] w-[120px] h-14 flex items-center rounded-full justify-center">Sign
+                                             up</a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </nav>
+          </header>
+          <section class="md:pt-[229px] pb-12 pt-[120px] md:bg-gray-1200 bg-yellow-1200">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 mx-auto">
+                    <div
+                         class="xl:pl-[100px] xl:pr-16 pr-[30px] pl-[30px] bg-yellow-1200 rounded-[40px] md:pt-20 md:pb-16 pb-10">
+                         <div class="flex flex-wrap xl:-mx-3">
+                              <div data-aos="fade-up" data-aos-delay="200"
+                                   class="xl:w-1/2 xl:mt-0 md:mt-[100px] mt-6 w-full xl:order-1 order-2 xl:px-3">
+                                   <div class="xl:max-w-[586px] xl:text-start text-center">
+                                        <h6
+                                             class="text-xl font-dm-sans font-bold xl:mb-7 mb-6 leading-[100%] text-white tracking-[-0.5px]">
+                                             SmartPay</h6>
+                                        <h1
+                                             class="text-white  font-dm-sans xl:text-[80px] list-items md:text-[68px] xl:mx-0 mx-auto xl:max-w-full max-w-[600px] text-[48px] font-medium leading-[100%] tracking-[-2px]">
+                                             Earn while<Br> your spend.</h1>
+                                        <p
+                                             class="text-white md:text-lg text-[15px] font-normal  xl:mx-0 mx-auto xl:max-w-full max-w-[700px] md:py-7 py-6">
+                                             Welcome to
+                                             <Strong> Smart</Strong>Rewards,
+                                             where
+                                             every transaction becomes an opportunity to win big! With your Smartie
+                                             wallet, every purchase you make accumulates valuable reward points that can
+                                             be redeemed for exciting giveaways and prizes. Join us on this thrilling
+                                             journey, where your loyalty pays off in amazing ways!
+                                        </p>
+                                        <a href="#"
+                                             class="text-white text-base font-medium xl:mx-0 mx-auto hover:bg-none border-2 hover:text-white border-blue-1000 bg-blue-1000 w-[180px] h-14 flex items-center rounded-full justify-center">Sign
+                                             up</a>
+                                   </div>
+                              </div>
+                              <div class="xl:w-1/2 w-full xl:order-2 order-1 xl:px-3">
+                                   <div data-aos="zoom-in-up"
+                                        class="xl:text-end xl:w-auto  md:w-[570px] w-[251px] mx-auto xl:-mt-0 md:-mt-36">
+                                        <img src="images/gift-img.png" class="inline-block" alt="">
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="pt-3 md:pb-24 pb-10 relative z-10">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 mx-auto">
+                    <div class="flex flex-wrap items-end xl:text-start text-center">
+                         <div data-aos="fade-up" data-aos-delay="200" class="xl:w-1/2 w-full  xl:order-1 order-2">
+                              <div class="xl:max-w-[500px] 2xl:ml-[104px] xl:ml-20">
+                                   <h6
+                                        class="text-xl font-dm-sans font-bold md:mb-[34px] mb-6 leading-[100%] text-blue-1000 tracking-[-0.5px]">
+                                        How to earn points</h6>
+                                   <h2
+                                        class="xl:text-[80px] md:text-[68px] text-[48px] max-w-[760px] mx-auto font-dm-sans font-medium leading-[100%] tracking-[-2px] text-black-1000">
+                                        Spend and earn points <span class="text-blue-1000">.</span></h2>
+                                   <p
+                                        class="text-black-1100 xl:max-w-[465px] max-w-[700px] xl:mx-0 mx-auto md:text-lg text-[15px] font-normal md:py-[34px] py-6">
+                                        Every merchant
+                                        purchase you make with your Smartie wallet is a rewarding experience! Earn
+                                        valuable reward points effortlessly as you spend, and watch your points
+                                        accumulate with each transaction. </p>
+                                   <ul class="md:mb-[34px] mb-6">
+                                        <li
+                                             class="md:flex grid md:mb-[34px] mb-6 xl:justify-start justify-center items-center">
+                                             <img src="images/wallet-icon.svg"
+                                                  class="inline-block md:mx-0 mx-auto md:mb-0 mb-1.5" alt=""><span
+                                                  class="md:text-lg text-[15px]  md:pl-[26px] font-dm-sans font-medium leading-[110%] tracking-[-0.45px] text-black-1000">Use
+                                                  your Smartie wallet to spend</span>
+                                        </li>
+                                        <li class="md:flex grid  xl:justify-start justify-center items-center"><img
+                                                  src="images/coin-icon.svg"
+                                                  class="inline-block md:mx-0 mx-auto md:mb-0 mb-1.5" alt=""><span
+                                                  class="md:text-lg text-[15px] md:pl-[26px] font-dm-sans font-medium leading-[110%] tracking-[-0.45px] text-black-1000">Earn
+                                                  Reward points for every<br> merchant purchase</span></li>
+                                   </ul>
+                                   <a href="#"
+                                        class="text-white xl:mx-0 mx-auto hover:bg-transparent hover:text-blue-1000 border border-blue-1000 text-base bg-blue-1000 rounded-full h-[60px] w-[240px]  flex items-center justify-center font-medium">
+                                        Sign up
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="xl:w-1/2 w-full xl:order-2 order-1">
+                              <div data-aos="zoom-in-up"
+                                   class="md:-mr-[100%] xl:ml-0 md:ml-16 -mx-28 xl:mb-[180px] mb-7">
+                                   <img src="images/shopping-basket.png" class="md:inline-block hidden" alt="">
+                                   <img src="images/m-img.png" class="inline-block md:hidden w-full" alt="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="xl:pt-[140px] md:pt-[72px] pt-10  md:pb-24 pb-1 z-10 relative">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 mx-auto">
+                    <div class="flex flex-wrap items-center xl:text-start text-center">
+                         <div class="xl:w-1/2 w-full">
+                              <div data-aos="zoom-in-up" class="xl:w-auto md:w-[486px] w-[314px]  xl:mx-0 mx-auto">
+                                   <img src="images/give-away.png" class="inline-block" alt="">
+                              </div>
+                         </div>
+                         <div data-aos="fade-up" data-aos-delay="200" class="xl:w-1/2 w-full">
+                              <div class="xl:max-w-[500px] 2xl:ml-[104px] xl:ml-20">
+                                   <h6
+                                        class="text-xl font-dm-sans font-bold xl:mb-[30px] mb-7 leading-[100%] text-blue-1000 tracking-[-0.5px]">
+                                        How to spend points</h6>
+                                   <h2
+                                        class="xl:text-[80px] md:text-[68px] text-[48px]  font-dm-sans font-medium leading-[100%] tracking-[-2px] text-black-1000">
+                                        Enter special giveaways<span class="text-blue-1000">.</span></h2>
+                                   <p
+                                        class="text-black-1100  md:text-lg text-[15px] font-normal xl:py-[35px] py-7 xl:max-w-[442px] max-w-[700px] xl:mx-0 mx-auto ">
+                                        Redeem your
+                                        points to enter amazing giveaways and contests, where you stand a chance to win
+                                        fantastic prizes and experiences. Your loyalty pays off, and with Smartie's
+                                        rewarding ecosystem, you’re just a few points away from your chance at winning.
+                                   </p>
+                                   <ul class="xl:mb-[35px] mb-7">
+                                        <li
+                                             class="md:flex grid xl:justify-start justify-center items-center xl:mb-[35px] mb-7">
+                                             <img src="images/networking.svg"
+                                                  class="inline-block md:mx-0 mx-auto md:mb-0 mb-1.5" alt=""><span
+                                                  class="md:text-lg text-[15px] md:pl-[26px] font-dm-sans font-medium leading-[110%] tracking-[-0.45px] text-black-1000">Get
+                                                  more reward points by referring friends</span>
+                                        </li>
+                                        <li class="md:flex grid xl:justify-start justify-center items-center"><img
+                                                  src="images/gift-pack.svg"
+                                                  class="inline-block md:mx-0 mx-auto md:mb-0 mb-1.5" alt=""><span
+                                                  class="md:text-lg text-[15px] md:pl-[26px] font-dm-sans font-medium leading-[110%] tracking-[-0.45px] text-black-1000">Enter
+                                                  to win big prizes with your reward points</span></li>
+                                   </ul>
+                                   <a href="#" data-aos-delay="5 00"
+                                        class="text-white hover:bg-transparent xl:mx-0 mx-auto hover:text-blue-1000 border border-blue-1000 text-base bg-blue-1000 rounded-full h-[60px] w-[240px]  flex items-center justify-center font-medium">
+                                        Sign up
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="xl:pt-[160px] pt-[72px] xl:pb-[135px] pb-[103px]">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 mx-auto">
+                    <div class="flex flex-wrap items-center xl:text-start text-center">
+                         <div data-aos="fade-up" data-aos-delay="200"
+                              class="xl:w-1/2 w-full xl:order-1 xl:mt-0 mt-7 order-2">
+                              <div class="xl:max-w-[500px] 2xl:ml-[104px] xl:ml-20">
+                                   <h6
+                                        class="text-xl font-dm-sans font-bold md:py-9 py-6 leading-[100%] text-blue-1000 tracking-[-0.5px]">
+                                        Use points as you earn</h6>
+                                   <h2
+                                        class="xl:text-[80px] md:text-[68px] text-[48px] xl:max-w-[492px] max-w-[700px] mx-auto font-dm-sans font-medium leading-[100%] tracking-[-2px] text-black-1000">
+                                        Turn each purchase into a win-win<span class="text-blue-1000">.</span></h2>
+                                   <p
+                                        class="text-black-1100 xl:max-w-[465px] max-w-[700px] xl:mx-0 mx-auto md:text-lg text-[15px] font-normal md:py-9 py-6">
+                                        Accumulate your
+                                        reward points to unlock exciting prizes and exclusive giveaways, turning your
+                                        loyalty into extraordinary rewards.` </p>
+
+                                   <a href="#"
+                                        class="text-white hover:bg-transparent xl:mx-0 mx-auto hover:text-blue-1000 border border-blue-1000 text-base bg-blue-1000 rounded-full h-[60px] w-[240px]  flex items-center justify-center font-medium">
+                                        Sign up
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="xl:w-1/2 w-full xl:order-2 order-1">
+                              <div data-aos="zoom-in-up" class="text-center">
+                                   <img src="images/win-img.png" class="inline-block" alt="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section>
+               <div class="max-w-[1086px] xl:px-4 md:px-[70px] mx-auto">
+                    <div class="bg-green-1100 md:rounded-[40px] lg:px-[114px] px-9 pt-[91px] md:pb-28 pb-16">
+                         <div class="text-center">
+                              <h2
+                                   class=" text-white xl:text-[80px] md:text-[68px] text-[48px] font-dm-sans font-medium leading-[100%] tracking-[-2px]">
+                                   Reward points tiers</h2>
+                              <p
+                                   class="text-base max-w-[490px] mx-auto text-white md:mt-20 my-[38px] md:mb-[100px] font-Inter font-medium leading-[150%] tracking-[-0.176px]">
+                                   Our tiered reward system ensures that the more you engage, the more you earn, making
+                                   your loyalty experience truly rewarding."</p>
+                         </div>
+                         <div class="max-w-[620px] mx-auto">
+                              <div class="grid md:grid-cols-2 gap-5">
+                                   <div class="box box-1" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="#" class="bg-blue-1000 block rounded-3xl p-10 pt-9"
+                                             data-aos-delay="200">
+                                             <div
+                                                  class="w-[60px] h-[60px] flex items-center justify-center bg-blue-1200 drop-shadow-5xl rounded-full">
+                                                  <img src="images/star.svg" class="drop-shadow-4xl" alt="">
+                                             </div>
+                                             <h4
+                                                  class="text-[32px] pr-4 my-5 font-medium leading-[110%] tracking-[-1.44px] text-white">
+                                                  Member</h4>
+                                             <p
+                                                  class="text-base leading-6 mb-5 font-open-sans tracking-[-0.4px] text-white">
+                                                  Earn 0.5 point for every dollar using your Smartie wallet</p>
+                                             <button href="#"
+                                                  class="flex  items-center px-2 text-white md:text-lg text-[15px] font-dm-sans font-medium leading-[110%] tracking-[-0.81px]">Learn
+                                                  more<svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="8"
+                                                       height="14" viewBox="0 0 8 14" fill="none">
+                                                       <path d="M1 1L7 7L1 13" stroke="#fff" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  </svg></button>
+                                        </a>
+                                   </div>
+                                   <div class="box box-2" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="#" class="block bg-gray-1300 rounded-3xl p-10 pt-9"
+                                             data-aos-delay="300">
+                                             <div
+                                                  class="w-[60px] h-[60px] flex items-center justify-center bg-gray-1400 drop-shadow-5xl rounded-full">
+                                                  <img src="images/star.svg" class="drop-shadow-4xl" alt="">
+                                             </div>
+                                             <h4
+                                                  class="text-[32px] pr-4 my-5 font-medium leading-[110%] tracking-[-1.44px] text-black-1100">
+                                                  Silver</h4>
+                                             <p
+                                                  class="text-base leading-6 mb-5 font-open-sans tracking-[-0.4px] text-black-1100">
+                                                  Earn 1 point for every dollar using your Smartie wallet</p>
+                                             <button href="#"
+                                                  class="flex px-2 items-center text-black-1100 md:text-lg text-[15px] font-dm-sans font-medium leading-[110%] tracking-[-0.81px]">Learn
+                                                  more<svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="8"
+                                                       height="14" viewBox="0 0 8 14" fill="none">
+                                                       <path d="M1 1L7 7L1 13" stroke="#27272E" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  </svg></button>
+                                        </a>
+                                   </div>
+                                   <div class="box box-3" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="#" class="block bg-yellow-1200 rounded-3xl p-10 pt-9">
+                                             <div
+                                                  class="w-[60px] h-[60px] flex items-center justify-center bg-yellow-1000 drop-shadow-5xl rounded-full">
+                                                  <img src="images/star.svg" class="drop-shadow-4xl" alt="">
+                                             </div>
+                                             <h4
+                                                  class="text-[32px] pr-4 my-5 font-medium leading-[110%] tracking-[-1.44px] text-white">
+                                                  Gold</h4>
+                                             <p
+                                                  class="text-base leading-6 mb-5 font-open-sans tracking-[-0.4px] text-white">
+                                                  Earn 1.5 points for every dollar using your Smartie wallet</p>
+                                             <button href="#"
+                                                  class="flex px-2 items-center text-white md:text-lg text-[15px] font-dm-sans font-medium leading-[110%] tracking-[-0.81px]">Learn
+                                                  more<svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="8"
+                                                       height="14" viewBox="0 0 8 14" fill="none">
+                                                       <path d="M1 1L7 7L1 13" stroke="#fff" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  </svg></button>
+                                        </a>
+                                   </div>
+                                   <div class="box box-2" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="#" class="block bg-gray-1500 rounded-3xl p-10 pt-9"
+                                             data-aos-delay="500">
+                                             <div
+                                                  class="w-[60px] h-[60px] flex items-center justify-center bg-gray-1600 drop-shadow-5xl rounded-full">
+                                                  <img src="images/star.svg" class="drop-shadow-4xl" alt="">
+                                             </div>
+                                             <h4
+                                                  class="text-[32px] pr-4 my-5 font-medium leading-[110%] tracking-[-1.44px] text-black-1100">
+                                                  Platinum</h4>
+                                             <p
+                                                  class="text-base leading-6 mb-5 font-open-sans tracking-[-0.4px] text-black-1100">
+                                                  Earn 2 points for every dollar using your Smartie wallet</p>
+                                             <button href="#"
+                                                  class="flex px-2 items-center text-black-1100 md:text-lg text-[15px] font-dm-sans font-medium leading-[110%] tracking-[-0.81px]">Learn
+                                                  more<svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="8"
+                                                       height="14" viewBox="0 0 8 14" fill="none">
+                                                       <path d="M1 1L7 7L1 13" stroke="#27272E" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  </svg></button>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="xl:pt-12 md:mb-[75px]">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10  mx-auto">
+                    <div
+                         class="bg-app-bg md:rounded-[40px] pt-[70px] text-center md:pb-24 pb-10 xl:px-[167px] md:px-16 px-[30px]">
+                         <div data-aos="fade-up" data-aos-delay="200">
+                              <h2
+                                   class="text-white xl:text-[80px] md:text-[68px] text-[48px] font-dm-sans font-medium leading-[100%] tracking-[-2px]">
+                                   Download our app now</h2>
+                              <p
+                                   class="text-base max-w-[490px] mx-auto text-white my-[39px]  font-Inter font-medium leading-[150%] tracking-[-0.176px]">
+                                   Now available to download on Apple Store and Google Play</p>
+                              <a href="#"
+                                   class="text-blue-1000 text-base font-medium hover:bg-transparent border-2 hover:text-white mx-auto border-yellow-1000 bg-yellow-1000 w-[240px] h-[60px] flex items-center rounded-full justify-center">Download
+                                   now</a>
+                              <ul class="block md:hidden mt-8  gap-5  text-center">
+                                   <li><a href="#"><img src="images/app-store.svg"
+                                                  class="inline-block w-[220px] mx-auto" alt=""></a></li>
+                                   <li class="mt-2"><a href="#"><img src="images/play-store.svg"
+                                                  class="inline-block w-[220px] mx-auto" alt=""></a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <ul data-aos="fade-up" data-aos-delay="200"
+                         class="md:flex hidden -mt-10 items-center gap-5 justify-center">
+                         <li><a href="#"><img src="images/app-store.svg" alt=""></a></li>
+                         <li><a href="#"><img src="images/play-store.svg" alt=""></a></li>
+                    </ul>
+               </div>
+          </section>
+          <footer class="bg-blue-1100 pt-[58px] md:pb-[61px] pb-8">
+               <div class="max-w-[1440px] 2xl:px-[100px] xl:px-14 lg:px-[70px] md:px-10 px-8 mx-auto">
+                    <div class="max-w-[1040px] mx-auto border-b md:pb-[67px] pb-10 border-white">
+                         <div class="flex flex-wrap">
+                              <div class="md:w-1/4 w-full md:text-start text-center">
+                                   <img src="images/white-logo.svg" class="inline-block" alt="">
+                              </div>
+                              <div class="md:w-1/4 w-full md:mt-0 mt-6">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Company
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">About
+                                                  us</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Meet
+                                                  the team</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Press</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Blog</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="md:w-1/4 w-full">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Support
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Knowledge
+                                                  Centre</a></li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Cookies</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Privacy
+                                                  &
+                                                  terms</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">Sitemap</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="md:w-1/4 w-full">
+                                   <h5 class="text-lg font-dm-sans md:mb-10 mb-6 font-medium text-gray-1100">Products
+                                   </h5>
+                                   <ul>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartPay</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartStay</a>
+                                        </li>
+                                        <li><a href="#"
+                                                  class="text-base text-white leading-10 tracking-[-0.4px] hover:text-yellow-1000">SmartWeb</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-[1040px] mx-auto  ">
+                         <a href="#" class="flex md:mt-8 mt-6 xl:justify-end justify-center items-center"><img
+                                   src="images/up-scroll.svg" alt=""><span
+                                   class="text-white font-open-sans ml-4 text-base leading-6 tracking-[-0.4px]">Back to
+                                   top</span></a>
+                    </div>
+               </div>
+          </footer>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="js/main.js"></script>
+     <script>
+          AOS.init({
+               duration: 700,
+          });
+     </script>
+</body>
+
+</html>
